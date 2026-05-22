@@ -6,7 +6,7 @@ while True:
     difficulty = input("Enter your difficulty (Easy, Medium, Hard): ").lower()
 
     if difficulty == "easy":
-                print("------EASY🙂------")
+                print("------EASY------")
 
                 lowest_num = 1
                 highest_num = 100
@@ -32,7 +32,7 @@ while True:
                             print(f"Please select a number between {lowest_num} and {highest_num}")
                         elif attempts == 0:
                             print("Max attempts!")
-                            print("-------YOU LOSE🥱------")
+                            print("-------YOU LOSE------")
                             is_running = False
                         elif guess < answer:
                             print("Too low try again!")
@@ -41,7 +41,7 @@ while True:
                             print("Too high try again!")
                             print(f"You have {attempts} attempts ")
                         else:
-                            print("---------WIN😎---------")
+                            print("---------WIN---------")
                             print(f"CORRECT! The answer was {answer}")
                             print(f"Number of guesses: {guesses} ")    
                             print(f"Remaining attempts: {attempts} ")
@@ -50,15 +50,17 @@ while True:
                         print("Invalid guess")
                         print(f"Please select a number between {lowest_num} and {highest_num}")
     elif difficulty == "medium":
-                print("------MEDIUM😐------")
+                print("------MEDIUM------")
                 lowest_num = 1
                 highest_num = 500
                 answer = random.randint(lowest_num, highest_num)
                 guesses = 0
                 is_running = True
                 attempts = 12
-
+                print("----------------------------")
                 print("Python Number Guessing Game")
+                print("----------------------------")
+
                 print(f"Select a number {lowest_num} and {highest_num}")
 
                 while is_running:
@@ -74,7 +76,7 @@ while True:
                             print(f"Please select a number between {lowest_num} and {highest_num}")
                         elif attempts == 0:
                             print("Max attempts!")
-                            print("-------YOU LOSE🥱------")
+                            print("-------YOU LOSE------")
                             is_running = False
                         elif guess < answer:
                             print("Too low try again!")
@@ -83,7 +85,7 @@ while True:
                             print("Too high try again!")
                             print(f"You have {attempts} attempts ")
                         else:
-                            print("---------WIN😎---------")
+                            print("---------WIN---------")
                             print(f"CORRECT! The answer was {answer}")
                             print(f"Number of guesses: {guesses} ")    
                             print(f"Remaining attempts: {attempts} ")
@@ -93,15 +95,17 @@ while True:
                         print(f"Please select a number between {lowest_num} and {highest_num}")
 
     elif difficulty == "hard":
-                print("------HARD😫------")
+                print("------HARD------")
                 lowest_num = 1
                 highest_num = 1000
                 answer = random.randint(lowest_num, highest_num)
                 guesses = 0
                 is_running = True
                 attempts = 10
-
+                print("----------------------------")
                 print("Python Number Guessing Game")
+                print("----------------------------")
+
                 print(f"Select a number {lowest_num} and {highest_num}")
 
                 while is_running:
@@ -117,7 +121,7 @@ while True:
                             print(f"Please select a number between {lowest_num} and {highest_num}")
                         elif attempts == 0:
                             print("Max attempts!")
-                            print("-------YOU LOSE🥱------")
+                            print("-------YOU LOSE------")
                             is_running = False
                         elif guess < answer:
                             print("Too low try again!")
@@ -126,7 +130,7 @@ while True:
                             print("Too high try again!")
                             print(f"You have {attempts} attempts ")
                         else:
-                            print("---------WIN😎---------")
+                            print("---------WIN---------")
                             print(f"CORRECT! The answer was {answer}")
                             print(f"Number of guesses: {guesses} ")    
                             print(f"Remaining attempts: {attempts} ")
