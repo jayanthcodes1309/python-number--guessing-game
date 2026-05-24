@@ -6,8 +6,9 @@ while True:
     difficulty = input("Enter your difficulty (Easy, Medium, Hard): ").lower()
 
     if difficulty == "easy":
-                print("------EASY------")
-
+                print()
+                print("      EASY      ")
+                print()
                 lowest_num = 1
                 highest_num = 100
                 answer = random.randint(lowest_num, highest_num)
@@ -50,7 +51,9 @@ while True:
                         print("Invalid guess")
                         print(f"Please select a number between {lowest_num} and {highest_num}")
     elif difficulty == "medium":
-                print("------MEDIUM------")
+                print()
+                print("      Medium      ")
+                print()
                 lowest_num = 1
                 highest_num = 500
                 answer = random.randint(lowest_num, highest_num)
@@ -95,7 +98,9 @@ while True:
                         print(f"Please select a number between {lowest_num} and {highest_num}")
 
     elif difficulty == "hard":
-                print("------HARD------")
+                print()
+                print("      HARD      ")
+                print()
                 lowest_num = 1
                 highest_num = 1000
                 answer = random.randint(lowest_num, highest_num)
